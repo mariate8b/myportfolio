@@ -1,109 +1,203 @@
 body{
     background-color: white;
     background-image: url("https://static.vecteezy.com/system/resources/previews/008/490/121/original/wave-abstract-lines-background-line-art-png.png"); 
-}
-.container{
-    border:  black;
-    display: grid;
-    grid-template-columns:300px 300px 300px 300px;
-    grid-template-rows: 200px 200px 200px 200px 200px;
     
 }
-/* header */
-.header {
-    
-    width: 100%;
-    height: 100px;
-    background: #000000;
-    color: #f1f1f1;
-    position: fixed ;
-    grid-area: 1/6;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  /* */
-
-  #icons{
-   position: absolute;
-    float: right;
-    z-index: 1;
-   
-  }
-  #linkedin{
-    position: fixed;
-    width: 50px;
-    margin-left: 110px;
-    margin-top: 20px;
-    z-index: 1;
-  }
-   
-
-  #name{
-   margin-left: 600px;
-  }
-  #image-homepage{
-    width: 500px;
-    margin-top: 200px;
-  }
-  
-  
-/* Dropdow Manu */
-
-.dropbtn {
-    background-color: #000000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    margin-left: 100px;
-    margin-top: 150px ;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #efbea4;}
-/* Footer Information*/
-
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    opacity: 0.5;
-  }
+/* Flex Container*/
+.flex-container{
+ display: grid;
+ grid-template-columns: 20% 80%;
+ grid-template-rows: 100px 800px 100px;
+ gap: 10px;
  
+}
+/* Header & features*/
+.header{
+  grid-column: 1/4;
+  background-color: black;
+  color: white;
+  text-align: center; 
+}
+#name{
+  font-style:oblique;
+  font-size: x-large;
+}
+ #github{
+  position: absolute;
+top:15px ;
+left: 50px;
+  width: 80px;
+  z-index: 1;
+ }
+ #linkedin{
+  position: absolute;
+  top:30px ;
+  left: 150px;
+  width: 50px;
+  z-index: 1;
+ }
+/* Menu Layout*/
+
+.main-left{
+  grid-column: 1/2;
+  border: 1px black;
+  
+}
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-left: 80px;
+  margin-top: 50px;
+  width: 150px;
+ 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-style: italic;
+  font-size: larger;
+}
+
+.dropdown-content a:hover {background-color: #d4a5d5;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #d4a5d5;}
+/* Main Body right side*/
+
+.main-right{
+  grid-column: 2/2;
+  border: black 1px;
+}
+#quote{
+  
+ width: 300px;
+ float: right;
+ margin-top: 350px;
+ margin-right: 200px;
+ z-index: 1;
+ background-color: rgb(229, 153, 81);
+ 
+}
+#foto-profesional{
+  width: 750px;
+
+  z-index: 2;
+  float: left;
+}
+/* Main Body About*/
+#images-volcan{
+  margin-top: 100px;
+  width: 300px;
+  margin-left: 200px;
+  
+}
+#volcan-paragraph{
+  margin-top: 100px;
+  width: 500px;
+  float: right;
+  margin-right: 200px;
+}
+#music-pic{
+  margin-top: 100px;
+  width: 300px;
+  float: right;
+  margin-right: 200px;
+  padding-bottom: 50px;
+}
+#music-paragraph{
+  margin-top: 200px;
+  width: 500px;
+  margin-left: 200px;
+  float: left;
+}
+/*Body portafolio */
+
+table{
+  background-color: #000000;
+  color: #f1f1f1;
+  width: 250px;
+  height:100px ;
+  
+  margin-top: 50px;
+  margin-left:40px;
+  border: 50px lightgreen;
+  
+}
+#images-portfolio{
+  width: 600px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+#p-par{
+
+  margin-left: 300px;
+  margin-top: 50px;
+}
+/*Contact Form*/
+
+body {font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+label{
+
+}
+
+input[type=submit] {
+  
+  background-color: #000000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #d4a5d5;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+/* Footer */  
+
+.footer{
+  grid-column: 3/-3;
+ background-color: #000000;
+  border: solid black;
+}
